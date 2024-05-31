@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
 
-
+  // inner CSS by using CSS name mentioned below:
   const myCssObject = {
     fontFamily: "cursive",
     fontSize: "25px"
