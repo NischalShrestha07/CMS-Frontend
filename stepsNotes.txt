@@ -10,4 +10,5 @@
 
 5.3 Open in VSCode and in default run by using command:-  npm run dev
 
-5.4 Then, go to package.json and replace the name "dev" to "start"  helps to run with command "npm start"
+5.4 Then, we can go to package.json and replace the name "dev" to "start"  helps to run with command "npm start" but not mandatory.
+
