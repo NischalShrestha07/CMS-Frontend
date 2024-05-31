@@ -1,0 +1,13 @@
+1. npm create vite@latest
+2. Enter project name and package name 
+3. Choose the frameworks React.
+4. Again in next option choose the JavaScript
+
+5. Now certain command are given which we should enter in the cmd in the required folder.
+5.1 npm "project_name" //to get project_name enter TAB automatically enters
+
+5.2 Enter another command npm install
+
+5.3 Open in VSCode and in default run by using command:-  npm run dev
+
+5.4 Then, go to package.json and replace the name "dev" to "start"  helps to run with command "npm start"
