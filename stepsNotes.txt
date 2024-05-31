@@ -12,3 +12,15 @@
 
 5.4 Then, we can go to package.json and replace the name "dev" to "start"  helps to run with command "npm start" but not mandatory.
 
+
+
+
+
+
+
+NOTES:
+=>   <>...</> is named as react Fragment which can be any tag <div>,etc and used when we want to write a multiple line of code inside src folder
+
+=>    <h5>Age:{11 + 10}</h5>
+{ } are used to get its evaluations and if not used same data(11+10) will be shown in browser.
+
