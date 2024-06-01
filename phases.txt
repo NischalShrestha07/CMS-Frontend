@@ -1,4 +1,4 @@
-
+Phase 1:
 import './App.css'
 // above line in NodeJS => require("./App.css") 
 const name = "Komeyta"
@@ -28,3 +28,31 @@ export default App
 // above line in NodeJS => 
 // module.exports=App
 // exports.App.css
+
+
+Phase 2:
+
+// import './App.css' ****its commented***
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+function App() {
+
+  return (
+    <BrowserRouter>
+
+      <Routes>
+        <Route path='/' element={<h1>I am in home page</h1>} />
+        <Route path='/about' element={<h1>i am from About page.</h1>} />
+        <Route path='/contact' element={<h1>i am from Contact page.</h1>} />
+      </Routes>
+
+    </BrowserRouter>
+  )
+}
+
+export default App
+
+
+
+Phase 3:
+Problem 2:Html ko dherai code vayo vane halna apthero hunx as code dherai ani lamooo hunx.

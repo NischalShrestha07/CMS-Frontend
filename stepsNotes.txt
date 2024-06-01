@@ -59,3 +59,10 @@ function greet(){
 Note2:
 Problem 1:How to handle routes/path
 Solution 1: npm install react-router-dom package
+
+
+
+<Route /> is a self closing tag. 
+
+*******************NOTE******************
+Download this extension => "ES7 React/Redux/GraphQL/React-Native snippets"
