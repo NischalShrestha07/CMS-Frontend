@@ -45,3 +45,12 @@ const sayHi = () => {
 function sayHi(){
     console.log("Hello Brother");
 }
+
+Note1: when the html datas are passed inside the function then its called "Component" rather than a function.
+
+Example:
+function greet(){
+    return{
+        <h1>JoJoloppa</h1>
+    }
+}
