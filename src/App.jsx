@@ -1,7 +1,7 @@
 
 import './App.css'
 // above line in NodeJS => require("./App.css") 
-
+const name = "Komeyta"
 function App() {
 
   // inner CSS by using CSS name mentioned below:
@@ -17,6 +17,8 @@ function App() {
       {/* use of inline CSS  */}
       <h3 style={{ color: "greenyellow", fontFamily: "cursive", background: "red", padding: "25px", borderRadius: "25px" }}>I am a Student</h3>
       <h5>Age:{11 + 10}</h5>
+      <h1>{name}</h1>
+
 
     </>
   )
