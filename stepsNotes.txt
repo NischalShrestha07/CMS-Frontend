@@ -54,3 +54,8 @@ function greet(){
         <h1>JoJoloppa</h1>
     }
 }
+
+
+Note2:
+Problem 1:How to handle routes/path
+Solution 1: npm install react-router-dom package
