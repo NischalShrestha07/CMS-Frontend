@@ -66,3 +66,6 @@ Solution 1: npm install react-router-dom package
 
 *******************NOTE******************
 Download this extension => "ES7 React/Redux/GraphQL/React-Native snippets"
+
+Inside Home.jsx
+// Shortcut to get this below by default is "rafce"
