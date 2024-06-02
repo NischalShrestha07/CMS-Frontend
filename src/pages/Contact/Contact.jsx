@@ -1,4 +1,5 @@
 import './Contact.css'
+// import './Home.jsx'
 import React from 'react'
 
 function Contact() {
@@ -9,8 +10,7 @@ function Contact() {
                 <nav>
                     <a href="/">Home</a>
                     <a href="/about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#testimonials">Testimonials</a>
+
                     <a href="/contact">Contact</a>
                 </nav>
             </header>
