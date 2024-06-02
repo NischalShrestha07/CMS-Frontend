@@ -26,6 +26,11 @@ header .logo {
 nav {
     display: flex;
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 nav a {
     color: white;
