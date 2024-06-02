@@ -31,7 +31,6 @@ export default App
 
 
 Phase 2:
-
 // import './App.css' ****its commented***
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
