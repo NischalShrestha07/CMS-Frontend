@@ -91,6 +91,11 @@ section h2 {
     max-width: 200px;
     text-align: center;
 }
+span{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 21px;
+}
 
 .team-member img {
     width: 100%;

@@ -6,7 +6,7 @@ function Contact() {
     return (
         <div className="contact-page">
             <header>
-                <div className="logo">Nischal Code</div>
+                <div className="logo"><span>CodeWithNischal</span></div>
                 <nav>
                     <a href="/">Home</a>
                     <a href="/about">About</a>
@@ -59,7 +59,7 @@ function Contact() {
                 </div>
             </section>
             <footer>
-                <p>&copy; 2024 Nischal Code. All rights reserved.</p>
+                <p>&copy; 2024 <span>CodeWithNischal</span>. All rights reserved.</p>
             </footer>
         </div>
     )

@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div>
             <header>
-                <div className="logo">Nischal Code</div>
+                <div className="logo"><span>CodeWithNischal</span></div>
                 <nav>
                     <a href="/">Home</a>
                     <a href="/about">About</a>
@@ -15,11 +15,11 @@ const About = () => {
             </header>
             <section className="about-hero">
                 <h1>About Us</h1>
-                <p>Learn more about our mission, vision, and the team behind Nischal Code.</p>
+                <p>Learn more about our mission, vision, and the team behind <span>CodeWithNischal</span>.</p>
             </section>
             <section className="our-mission">
                 <h2>Our Mission</h2>
-                <p>At Nischal Code, our mission is to provide high-quality coding tutorials and services to help individuals become proficient programmers. We believe in empowering our community with the knowledge and skills needed to succeed in the tech industry.</p>
+                <p>At <span>CodeWithNischal</span>, our mission is to provide high-quality coding tutorials and services to help individuals become proficient programmers. We believe in empowering our community with the knowledge and skills needed to succeed in the tech industry.</p>
             </section>
             <section className="our-team">
                 <h2>Meet the Team</h2>
@@ -42,7 +42,7 @@ const About = () => {
                 </div>
             </section>
             <footer>
-                <p>&copy; 2024 Nischal Code. All rights reserved.</p>
+                <p>&copy; 2024 <span>CodeWithNischal</span>. All rights reserved.</p>
             </footer>
         </div>
     )
