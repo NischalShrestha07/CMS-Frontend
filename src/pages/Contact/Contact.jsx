@@ -1,3 +1,4 @@
+import Navbar from '../../components/Navbar/Navbar'
 import './Contact.css'
 // import './Home.jsx'
 import React from 'react'
@@ -5,15 +6,7 @@ import React from 'react'
 function Contact() {
     return (
         <div className="contact-page">
-            <header>
-                <div className="logo"><span>CodeWithNischal</span></div>
-                <nav>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-
-                    <a href="/contact">Contact</a>
-                </nav>
-            </header>
+            <Navbar />
             <section className="contact-hero">
                 <h1>Contact Us</h1>
                 <p>We'd love to hear from you. Please reach out with any questions or feedback.</p>

@@ -1,19 +1,12 @@
 
+import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 import React from 'react'
 const Home = () => {
 
     return (
         <div>
-            <header>
-                <div className="logo"><span>CodeWithNischal</span></div>
-                <nav>
-                    <a href="#home">Home</a>
-                    <a href="/about">About</a>
-
-                    <a href="/contact">Contact</a>
-                </nav>
-            </header>
+            <Navbar />
             <section className="hero">
                 <h1>Welcome to CodeWithNischal</h1>
                 <p>Your journey to becoming a better programmer starts here.</p>
