@@ -55,3 +55,11 @@ export default App
 
 Phase 3:
 Problem 2:Html ko dherai code vayo vane halna apthero hunx as code dherai ani lamooo hunx.
+Solution:
+
+->  Multiple folders ma multiple needed files(pages) banaune ani ek arka lai import garne 
+
+Phase 4:
+How to decrease the repeatation of the code?
+Solution is:  
+->  By making a Component

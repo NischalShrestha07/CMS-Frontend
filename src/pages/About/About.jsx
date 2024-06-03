@@ -4,15 +4,17 @@ import React from 'react'
 const About = () => {
     return (
         <div>
+
             <header>
                 <div className="logo"><span>CodeWithNischal</span></div>
                 <nav>
                     <a href="/">Home</a>
                     <a href="/about">About</a>
-
                     <a href="/contact">Contact</a>
                 </nav>
             </header>
+
+
             <section className="about-hero">
                 <h1>About Us</h1>
                 <p>Learn more about our mission, vision, and the team behind <span>CodeWithNischal</span>.</p>
@@ -41,9 +43,13 @@ const About = () => {
                     </div>
                 </div>
             </section>
+
+
             <footer>
                 <p>&copy; 2024 <span>CodeWithNischal</span>. All rights reserved.</p>
             </footer>
+
+
         </div>
     )
 }
