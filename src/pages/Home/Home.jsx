@@ -1,4 +1,5 @@
 
+import Button from '../../components/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 import React from 'react'
@@ -7,6 +8,7 @@ const Home = () => {
     return (
         <div>
             <Navbar />
+            <Button />
             <section className="hero">
                 <h1>Welcome to CodeWithNischal</h1>
                 <p>Your journey to becoming a better programmer starts here.</p>

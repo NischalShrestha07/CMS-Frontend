@@ -69,3 +69,7 @@ Download this extension => "ES7 React/Redux/GraphQL/React-Native snippets"
 
 Inside Home.jsx
 // Shortcut to get this below by default is "rafce"
+
+
+NOTE:
+Component name should always start from Capital letter as it is conventional use
