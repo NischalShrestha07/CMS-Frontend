@@ -108,3 +108,19 @@ and write the JS file above that return{} method
 ->  TO import and use the useState() we have to use these
   const [chauchau, setChauchau] = useState(0)
 this will import the useState when useState is entered.
+
+
+Important NOTE:
+->->->  {count +1} is valid in JS but {count++} is not valid as it throws errors.
+
+
+IN Test.jsx:
+ //USING NORMAL FUNCTIONS:
+    // function increaseCount() {
+    //     setCount(count + 1)
+    //     console.log(count);
+    // }
+    // function decreaseCount() {
+    //     setCount(count - 1)
+    //     console.log(count);
+    // }
