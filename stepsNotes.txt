@@ -90,3 +90,21 @@ const props={
 }
 props.title  -> to access the value Login
 props.subTitle  -> to access the value Register
+
+
+NOTE ON HOOKS:
+const [chauchau,setChauchau]=useState("WaiWai")
+const [name,setName] =useState("Nischal")
+
+
+NOTE:
+we only write  html files inside of return{} method.
+->   return{
+
+}
+and write the JS file above that return{} method
+
+
+->  TO import and use the useState() we have to use these
+  const [chauchau, setChauchau] = useState(0)
+this will import the useState when useState is entered.
