@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Button = () => {
+const Button = (passedValue) => {
     return (
         <div>
-            <button style={{ fontSize: "45px" }}>Submit</button>
+            <button style={{ fontSize: "45px" }}>{passedValue.title}</button>
         </div >
     )
 }

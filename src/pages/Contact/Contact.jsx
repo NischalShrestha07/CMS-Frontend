@@ -1,3 +1,4 @@
+import Button from '../../components/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import './Contact.css'
 // import './Home.jsx'
@@ -51,6 +52,7 @@ function Contact() {
                     </iframe>
                 </div>
             </section>
+            <Button title="Submit" />
             <footer>
                 <p>&copy; 2024 <span>CodeWithNischal</span>. All rights reserved.</p>
             </footer>

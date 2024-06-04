@@ -73,3 +73,6 @@ Inside Home.jsx
 
 NOTE:
 Component name should always start from Capital letter as it is conventional use
+
+As when the value is changed all the buttons values will change so to solve that Problem
+-> We use Props

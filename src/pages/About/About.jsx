@@ -1,3 +1,4 @@
+import Button from '../../components/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import './About.css'
 import React from 'react'
@@ -6,7 +7,7 @@ const About = () => {
     return (
         <div>
             <Navbar />
-
+            <Button title="Register" />
             <section className="about-hero">
                 <h1>About Us</h1>
                 <p>Learn more about our mission, vision, and the team behind <span>CodeWithNischal</span>.</p>
