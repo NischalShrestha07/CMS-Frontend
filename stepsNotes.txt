@@ -124,3 +124,17 @@ IN Test.jsx:
     //     setCount(count - 1)
     //     console.log(count);
     // }
+
+
+//useEffect Hooks->
+3 Types:
+useEffect(()=>{
+
+})
+useEffect(()=>{
+
+},[])
+
+useEffect(()=>{
+
+},[variableHere])
