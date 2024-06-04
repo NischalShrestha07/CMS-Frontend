@@ -8,7 +8,8 @@ const Home = () => {
     return (
         <div>
             <Navbar />
-            <Button title="Log In" />
+            <Button title="Log In" color="green" />
+            <Button title="Namastey" color="blue" />
             <section className="hero">
                 <h1>Welcome to CodeWithNischal</h1>
                 <p>Your journey to becoming a better programmer starts here.</p>

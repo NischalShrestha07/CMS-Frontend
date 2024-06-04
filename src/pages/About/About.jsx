@@ -43,7 +43,7 @@ const About = () => {
             </footer>
 
 
-        </div>
+        </div >
     )
 }
 
