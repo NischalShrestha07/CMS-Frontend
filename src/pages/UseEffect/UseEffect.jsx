@@ -24,7 +24,10 @@ const UseEffect = () => {
     // Type1 use of useEffect(jaba certain value eg: like numbers etc haru increase garera backend ma store garne. )
     useEffect(() => {
         // count ko value kati xa tyo backend samma pugauxa yesle:
-        console.log("Count value Changed.");
+        if (count !== 0) {
+            // document.title = count
+            console.log("Count value Changed.");
+        }
     }, [count])
 
     return (
