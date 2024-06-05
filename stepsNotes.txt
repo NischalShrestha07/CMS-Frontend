@@ -145,3 +145,19 @@ NOTE:
 // the comment of // </React.StrictMode>, in main.jsx will help to run or show the data in console only one at a time by default or start.
 
 
+TYPES (INSIDE useEffect.jsx)
+// Type1 use of useEffect
+    // // kohi manche first time site ma auda or first time refresh/mount/render huda tala ko use hunx 
+    // useEffect(() => {
+    //     console.log("Welcome to site");
+    // }, [])
+
+
+    // Type2 use of useEffect(jaba certain value eg: like numbers etc haru increase garera backend ma store garne. )
+    useEffect(() => {
+        // count ko value kati xa tyo backend samma pugauxa yesle:
+        if (count !== 0) {
+            // document.title = count
+            console.log("Count value Changed.");
+        }
+    }, [count, decreaseCount])
