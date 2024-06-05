@@ -14,14 +14,16 @@ const UseEffect = () => {
     }
 
 
-
+    // Type1 use of useEffect
     // // kohi manche first time site ma auda or first time refresh/mount/render huda tala ko use hunx 
     // useEffect(() => {
     //     console.log("Welcome to site");
     // }, [])
 
 
+    // Type1 use of useEffect(jaba certain value eg: like numbers etc haru increase garera backend ma store garne. )
     useEffect(() => {
+        // count ko value kati xa tyo backend samma pugauxa yesle:
         console.log("Count value Changed.");
     }, [count])
 

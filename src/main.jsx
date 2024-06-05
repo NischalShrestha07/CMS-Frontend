@@ -9,5 +9,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   // </React.StrictMode>,
 )
 
-
-// the comment of // </React.StrictMode>, in main.jsx will help to run or show the data in console only one at a time by default or start.
