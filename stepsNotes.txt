@@ -127,14 +127,18 @@ IN Test.jsx:
 
 
 //useEffect Hooks->
-3 Types:
+Types:
+Type1:   
 useEffect(()=>{
-
+//we use this less compared to other.
 })
+
+//Type2:
 useEffect(()=>{
+//code here
+},[])    => first time load/ mount huda page.
 
-},[])
-
+//Type3:
 useEffect(()=>{
 
 },[variableHere])
