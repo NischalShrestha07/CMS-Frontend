@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 const UseEffect = () => {
-    const { count, setCount } = useState(0)
+    const [count, setCount] = useState(0)
 
     const increaseCount = () => {
         setCount(count + 1)
@@ -10,13 +10,20 @@ const UseEffect = () => {
 
     const decreaseCount = () => {
         setCount(count - 1)
-        // console.log(count);
+        // console.log(count);`
     }
-    // kohi manche first time site ma auda or first time refresh/mount/render huda tala ko use hunx 
-    useEffect(() => {
-        console.log("Welcome to site");
-    }, [])
 
+
+
+    // // kohi manche first time site ma auda or first time refresh/mount/render huda tala ko use hunx 
+    // useEffect(() => {
+    //     console.log("Welcome to site");
+    // }, [])
+
+
+    useEffect(() => {
+        console.log("Count value Changed.");
+    }, [count])
 
     return (
         <div>
