@@ -14,18 +14,26 @@ const UseEffect = () => {
         setDecreaseCount(decreaseCount - 1)
         // console.log(count);`
     }
+    /*
+    // Type1 use of useEffect
+        // // kohi manche first time site ma auda or first time refresh/mount/render huda tala ko use hunx 
+    // useEffect(() => {
+        //     console.log("Welcome to site");
+        // }, [])
+    */
 
+    // Type2 use of useEffect(jaba certain value eg: like numbers etc haru increase garera backend ma store garne. )
+    // useEffect(() => {
+    //     // count ko value kati xa tyo backend samma pugauxa yesle:
+    //     if (increaseCount !== 0) {
+    //         // document.title = count
+    //         console.log("Count value Changed.");
+    //     }
+    // }, [increaseCount, decreaseCount])
 
-
-
-    // Type1 use of useEffect(jaba certain value eg: like numbers etc haru increase garera backend ma store garne. )
     useEffect(() => {
-        // count ko value kati xa tyo backend samma pugauxa yesle:
-        if (increaseCount !== 0) {
-            // document.title = count
-            console.log("Count value Changed.");
-        }
-    }, [increaseCount, decreaseCount])
+        console.log("Bye Bye ");
+    })
 
     return (
         <div>
