@@ -165,3 +165,10 @@ TYPES (INSIDE useEffect.jsx)
             console.log("Count value Changed.");
         }
     }, [count, decreaseCount])
+
+
+
+    // Notes: yesle automatically defautt ma +2 garera dinxa 
+    // useEffect(() => {
+    //     setIncreaseCount(increaseCount + 2)
+    // }, [])
