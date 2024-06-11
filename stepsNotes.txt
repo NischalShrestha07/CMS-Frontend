@@ -172,3 +172,15 @@ TYPES (INSIDE useEffect.jsx)
     // useEffect(() => {
     //     setIncreaseCount(increaseCount + 2)
     // }, [])
+
+
+
+Hackers in Webiste 
+https://www.hacker.com:80
+
+where:
+https => Protocols
+www=> Domain
+hacker=> hostname
+.com:80=>Port numbers
+
