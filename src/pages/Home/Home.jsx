@@ -1,10 +1,20 @@
 
+import axios from 'axios'
 import Button from '../../components/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
-import React from 'react'
-const Home = () => {
+import React, { useEffect } from 'react'
 
+const Home = () => {
+    // api call here
+    const fetchBlogs = async () => {
+        const response = await axios.get('http://localhost:2000/blogs')
+        console.log(response);
+    }
+
+    useEffect(() => {
+        fetchBlogs()
+    }, [])
     return (
         <div>
             <Navbar />
@@ -58,29 +68,29 @@ const Home = () => {
                 </form>
             </section>
             <div className="center">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-primary" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
-                <div class="spinner-border text-secondary" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-secondary" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
-                <div class="spinner-border text-success" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-success" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
-                <div class="spinner-border text-danger" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-danger" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
-                <div class="spinner-border text-warning" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-warning" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
-                <div class="spinner-border text-info" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-info" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
-                <div class="spinner-border text-light" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-light" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
-                <div class="spinner-border text-dark" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                <div className="spinner-border text-dark" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div>
             </div>
             <footer>
