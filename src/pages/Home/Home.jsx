@@ -1,20 +1,12 @@
 
-import axios from 'axios'
 import Button from '../../components/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
-import React, { useEffect } from 'react'
+
 
 const Home = () => {
     // api call here
-    const fetchBlogs = async () => {
-        const response = await axios.get('http://localhost:2000/blogs')
-        console.log(response);
-    }
 
-    useEffect(() => {
-        fetchBlogs()
-    }, [])
     return (
         <div>
             <Navbar />
