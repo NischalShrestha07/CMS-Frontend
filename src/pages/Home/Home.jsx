@@ -1,17 +1,30 @@
 
+import axios from 'axios'
 import Button from '../../components/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
+import { useEffect, useState } from 'react'
 
 
 const Home = () => {
+    const [blogs, setBlogs] = useState([])
+
     // api call here
+    const fetchBlogs = async () => {
+        const response = await axios.get('http://localhost:2000/blogs')
+        setBlogs(response.data.blogs)
+        // console.log(response.data.blogs);
+    }
+    useEffect(() => {
+        fetchBlogs()
+    }, [])
+    console.log(blogs, "Blogs");
 
     return (
         <div>
             <Navbar />
-            <Button title="Log In" color="green" subTitle="I am SubTitle" />
-            <Button title="Namastey" color="blue" subTitle="I am SubTitle" />
+            {/* <Button title="Log In" color="green" subTitle="I am SubTitle" /> */}
+            {/* <Button title="Namastey" color="blue" subTitle="I am SubTitle" /> */}
             <section className="hero">
                 <h1>Welcome to CodeWithNischal</h1>
                 <p>Your journey to becoming a better programmer starts here.</p>
@@ -85,12 +98,25 @@ const Home = () => {
                     <span className="visually-hidden">Loading...</span>
                 </div>
             </div>
+            {blogs.map((blog) => {
+                return (
+                    <div key={blog._id} className="card-body" >
+
+                        <h5 className="card-title">{blog.title}</h5>
+                        <h5 className="card-title">{blog.subTitle}</h5>
+                        <p className="card-text">{blog.description}</p>
+                        {/* <Link to={`/singleBlog/${blog._id}`} >See More</Link> */}
+
+                    </div>
+                )
+            })}
             <footer>
+
                 <p>&copy; 2024 <span>CodeWithNischal</span>. All rights reserved.</p>
             </footer>
 
 
-        </div>
+        </div >
     )
 }
 

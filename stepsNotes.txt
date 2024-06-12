@@ -184,3 +184,18 @@ www=> Domain
 hacker=> hostname
 .com:80=>Port numbers
 
+//Integration between frontend and backend
+
+=> npm install axios
+=> write below stuffs between the Home and return():
+=>  // api call here
+    const fetchBlogs = async () => {
+        const response = await axios.get('http://localhost:2000/blogs')
+        console.log(response);
+    }
+    useEffect(() => {
+        fetchBlogs()
+    }, [])
+=> Import axios and useEffect properly as it may not be auto-imported.
+=> 
+=> 
