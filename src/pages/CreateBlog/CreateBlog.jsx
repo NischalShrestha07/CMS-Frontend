@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CreateBlog.css'
 import Navbar from '../../components/Navbar/Navbar'
 const CreateBlog = () => {
+    const [title, setTitle] = useState("")
+    const [subTitle, setSubTitle] = useState("")
+    const [description, setDescription] = useState("")
+
+    console.log(title);
     return (
         <>
             <Navbar />
@@ -10,16 +15,16 @@ const CreateBlog = () => {
                     <form>
                         <h1>FORM TITLE</h1>
                         <div className="form-group">
-                            <label htmlFor="name">Title:</label>
-                            <input type="text" placeholder='Enter text' id="name" name="name" required />
+                            <label htmlFor="title">Title:</label>
+                            <input type="text" placeholder='Enter text' name="title" id="title" onChange={(e) => setTitle(e.target.value)} required />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="email">Subtitle:</label>
-                            <input type="text" placeholder='Enter Subtitle' name="subtitle" required />
+                            <label htmlFor="subtitle">Subtitle:</label>
+                            <input type="text" placeholder='Enter Subtitle' id="subtitle" name='subtitle' required />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="message">Description:</label>
-                            <textarea id="message" placeholder='Enter Description' name="message" rows="4" required></textarea>
+                            <label htmlFor="description">Description:</label>
+                            <textarea id="description" placeholder='Enter Description' name="message" rows="4" required></textarea>
                         </div>
                         <button type="submit">Submit</button>
                     </form>
