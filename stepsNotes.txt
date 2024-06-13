@@ -197,5 +197,11 @@ hacker=> hostname
         fetchBlogs()
     }, [])
 => Import axios and useEffect properly as it may not be auto-imported.
-=> 
-=> 
+
+
+
+//use of useNavigate() instead of onClick()
+
+{/* use of window.location will load the whole file so we use navigate() instead */}
+{/* <a onClick={() => window.location.href = "./createblog"}>CreateBlog</a> */}
+<a onClick={() => navigate('./createblog')}>CreateBlog</a>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import './Navbar.jsx'
+import './Navbar.css'
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -12,7 +12,9 @@ const Navbar = () => {
                     <a href="/">Home</a>
                     <a href="/about">About</a>
                     <a href="/contact">Contact</a>
-                    <a onClick={() => window.location.href = "/createblog"}>CreateBlog</a>
+                    {/* use of window.location will load the whole file so we use navigate() instead */}
+                    {/* <a onClick={() => window.location.href = "./createblog"}>CreateBlog</a> */}
+                    <a onClick={() => navigate('./createblog')}>CreateBlog</a>
                 </nav>
             </header>
         </div >
