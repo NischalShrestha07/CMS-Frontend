@@ -5,6 +5,7 @@ import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import Test from './pages/Test/Test'
 import UseEffect from './pages/UseEffect/UseEffect'
+import CreateBlog from './pages/CreateBlog/CreateBlog'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/test' element={<Test />} />
         <Route path='/useEffect' element={<UseEffect />} />
-
+        <Route path='/CreateBlog' element={<CreateBlog />} />
       </Routes>
 
     </BrowserRouter>
