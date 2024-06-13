@@ -11,8 +11,19 @@ const Home = () => {
 
     // api call here
     const fetchBlogs = async () => {
-        const response = await axios.get('http://localhost:2000/blogs')
-        setBlogs(response.data.blogs)
+        try {
+            const response = await axios.get('http://localhost:2000/blogs')
+            if (response.status == 200) {
+                setBlogs(response.data.blogs)
+            }
+            else {
+                // code here to make any responce.
+            }
+
+        } catch (error) {
+            alert("Something went wrong")
+        }
+
         // console.log(response.data.blogs);
     }
     useEffect(() => {
