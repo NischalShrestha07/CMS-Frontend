@@ -21,7 +21,7 @@ function App() {
         <Route path='/createblog' element={<CreateBlog />} />
         <Route path='/test' element={<Test />} />
         <Route path='/useEffect' element={<UseEffect />} />
-        <Route path='/singleblog' element={<SingleBlog />} />
+        <Route path='/singleblog/:id' element={<SingleBlog />} />
       </Routes>
 
     </BrowserRouter>
