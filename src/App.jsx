@@ -6,6 +6,7 @@ import Contact from './pages/Contact/Contact'
 import CreateBlog from './pages/CreateBlog/CreateBlog'
 import Test from './pages/Test/Test'
 import UseEffect from './pages/UseEffect/UseEffect'
+import SingleBlog from './SingleBlog/SingleBlog'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/createblog' element={<CreateBlog />} />
         <Route path='/test' element={<Test />} />
         <Route path='/useEffect' element={<UseEffect />} />
+        <Route path='/singleblog' element={<SingleBlog />} />
       </Routes>
 
     </BrowserRouter>

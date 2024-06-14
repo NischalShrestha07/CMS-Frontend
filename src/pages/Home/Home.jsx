@@ -4,6 +4,7 @@ import Button from '../../components/Button/Button'
 import Navbar from '../../components/Navbar/Navbar'
 import './Home.css'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -127,6 +128,7 @@ const Home = () => {
                             <h1 className="cardBox-title">{blog.title} </h1>
                             <h2 className="cardBox-subtitle">{blog.subTitle}</h2>
                             <p className="cardBox-description"> {blog.description}</p>
+                            <Link to={`/singleBlog/${blog._id}`}>See More</Link>
                         </div>
                     </div>
                     // <div style={{}} key={blog._id} className="card-body" >
