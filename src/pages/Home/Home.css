@@ -94,27 +94,48 @@ footer {
     width: 100%;
 }
 
-.card {
+.cardBox {
+margin: 10px;    
     background-color: #e0c7c7;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+    width: 100%;
     padding: 20px;
     text-align: center;
+    box-sizing: border-box;
+    
 }
 
-.card-title {
+.cardBox-title {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.card-subtitle {
+.cardBox-subtitle {
     font-size: 18px;
     margin-bottom: 15px;
     color: #555;
 }
 
-.card-description {
+.cardBox-description {
     font-size: 16px;
     color: #777;
+}
+@media (max-width: 600px) {
+    .cardBox {
+        padding: 15px;
+    }
+
+    .cardBox-title {
+        font-size: 20px;
+    }
+
+    .cardBox-subtitle {
+        font-size: 16px;
+    }
+
+    .cardBox-description {
+        font-size: 14px;
+    }
 }

@@ -122,10 +122,12 @@ const Home = () => {
 
                     // </div>
 
-                    <div className="card" key={blog._id}>
-                        <h1 className="card-title">{blog.title} </h1>
-                        <h2 className="card-subtitle">{blog.subTitle}</h2>
-                        <p className="card-description"> {blog.description}</p>
+                    <div className="cardBox" key={blog._id}>
+                        <div className="flexBar">
+                            <h1 className="cardBox-title">{blog.title} </h1>
+                            <h2 className="cardBox-subtitle">{blog.subTitle}</h2>
+                            <p className="cardBox-description"> {blog.description}</p>
+                        </div>
                     </div>
                     // <div style={{}} key={blog._id} className="card-body" >
 
