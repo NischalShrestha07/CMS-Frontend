@@ -109,16 +109,32 @@ const Home = () => {
                     <span className="visually-hidden">Loading...</span>
                 </div>
             </div>
+
+            {/* CreateBlog bata banakp naya blogs haru yesle garda auxa */}
             {blogs.map((blog) => {
                 return (
-                    <div key={blog._id} className="card-body" >
+                    // <div style={{ border: '5px solid black' }} key={blog._id} className="card-body" >
 
-                        <h5 className="card-title">{blog.title}</h5>
-                        <h5 className="card-title">{blog.subTitle}</h5>
-                        <p className="card-text">{blog.description}</p>
-                        {/* <Link to={`/singleBlog/${blog._id}`} >See More</Link> */}
+                    //     <h5 className="card-title">{blog.title}</h5>
+                    //     <h5 className="card-title">{blog.subTitle}</h5>
+                    //     <p className="card-text">{blog.description}</p>
+                    //     {/* <Link to={`/singleBlog/${blog._id}`} >See More</Link> */}
 
+                    // </div>
+
+                    <div className="card" key={blog._id}>
+                        <h1 className="card-title">{blog.title} </h1>
+                        <h2 className="card-subtitle">{blog.subTitle}</h2>
+                        <p className="card-description"> {blog.description}</p>
                     </div>
+                    // <div style={{}} key={blog._id} className="card-body" >
+
+                    //     <h5 >{blog.title}</h5>
+                    //     <h5 >{blog.subTitle}</h5>
+                    //     <p >{blog.description}</p>
+                    //     {/* <Link to={`/singleBlog/${blog._id}`} >See More</Link> */}
+
+                    // </div>
                 )
             })}
             <footer>
