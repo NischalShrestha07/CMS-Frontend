@@ -6,7 +6,7 @@ import Contact from './pages/Contact/Contact'
 import CreateBlog from './pages/CreateBlog/CreateBlog'
 import Test from './pages/Test/Test'
 import UseEffect from './pages/UseEffect/UseEffect'
-import SingleBlog from './SingleBlog/SingleBlog'
+import SingleBlog from './pages/SingleBlog/SingleBlog'
 
 function App() {
 

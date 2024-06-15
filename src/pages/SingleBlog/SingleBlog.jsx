@@ -14,6 +14,7 @@ const SingleBlog = () => {
             setBlog(response.data.data)
         }
     }
+
     useEffect(() => {
         fetchSingleBlog()
 
